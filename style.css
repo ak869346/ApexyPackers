@@ -15,7 +15,6 @@ body {
 }
 
 header {
-    /* background: #2ecc71; Green header */
     background-color: lightcoral;
     color: white;
     text-align: center;
@@ -30,6 +29,7 @@ nav ul {
     background: #fff; /* White navigation background */
     padding: 0.5em 0;
     margin-bottom: 1em; /* Spacing below navigation */
+    border-bottom: 2px solid lightcoral;
 }
 
 nav ul li {
@@ -45,7 +45,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2ecc71; /* Green hover color */
+    color: lightcoral; /* Matching hover color */
 }
 
 #catalog {
@@ -84,7 +84,7 @@ nav ul li a:hover {
 
 .catalog-item h2 {
     margin: 0.5em 0;
-    color: red; /* Green heading color */
+    color: lightcoral; /* Matching heading color */
 }
 
 .catalog-item p {
@@ -111,7 +111,9 @@ footer {
 }
 
 .contact-button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
     padding: 10px 20px;
@@ -158,7 +160,7 @@ footer {
         margin: 0.5em 0;
     }
     nav ul {
-        flex-direction: row;
+        flex-direction: column;
         padding: 1em 0;
     }
     nav ul li {
